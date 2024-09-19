@@ -29,7 +29,10 @@
                     colors: {
                         clifford: '#da373d',
                         "color-primary": 'rgb(171, 239, 95)',
-                                        
+                        "btn-view": 'rgba(171, 239, 95, 0.5)',
+                        "color-p": 'rgb(73, 73, 73)',
+                        "color-headline": 'rgb(33, 33, 33)',
+
                     }
                 }
             }
@@ -43,32 +46,16 @@
 </head>
 
 <body class="font-manrope">
-    <header>
-        <nav>
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <li><a>Home</a></li>
-                            <li><a>Services</a></li>
-                            <li><a>Portfolio</a></li>
-                            <li><a>Blogs</a></li>
-                            <li><a>Contact Us</a></li>
-                        </ul>
-                    </div>
+    <header class="container mx-auto">
+        <nav class="border-solid">
+            <div class="navbar">
+                <div>
                     <a class="bg-white font-bold text-2xl"> <i
                             class="fa-solid fa-arrow-right -rotate-45 rounded-full w-8 h-8 px-2 py-1 bg-color-primary text-black text-lg"></i>
-                        Rinterio</a>
+                        Rinterio</a>   
                 </div>
-                <div class="navbar-center hidden lg:flex">
+
+                <div class="hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
                         <li><a class="font-bold">Home</a></li>
                         <li><a>Services</a></li>
@@ -78,23 +65,61 @@
                     </ul>
                 </div>
 
-                <div>
+                
 
-                </div>
+                <div class="flex gap-8 ">
+                    <div class="flex">
+                        <i
+                            class="fa-solid fa-cart-shopping  rounded-full bg-red-600 w-8 h-8 px-2 py-2 mr-4 hidden md:block"></i>
 
-                <div class="navbar-end gap-8">
-                    <div>
-                        <i class="fa-solid fa-cart-shopping  rounded-full bg-red-600 w-8 h-8 px-2 py-2 mr-4"></i>
-
-                    <i class="fa-solid fa-magnifying-glass rounded-full bg-red-600 w-8 h-8 px-2 py-2"></i>
+                        <i
+                            class="fa-solid fa-magnifying-glass rounded-full bg-red-600 w-8 h-8 px-2 py-2 hidden md:block"></i>
                     </div>
 
-                    <a class="btn font-bold text-lg rounded-full bg-color-primary"> Book Consult <i
-                            class="fa-solid fa-arrow-right -rotate-45 rounded-full w-7 h-7 px-1 py-1 bg-black text-white"></i>
-                    </a>
+                    <div class="hidden md:block">
+                        <a class="btn font-bold text-lg rounded-full bg-color-primary"> Book Consult <i
+                                class="fa-solid fa-arrow-right -rotate-45 rounded-full w-7 h-7 px-1 py-1 bg-black text-white"></i></a>
+                    </div>
+
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 shadow">
+                            <li><a>Home</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a>Blogs</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
                 </div>
+
+                
+
             </div>
+            
         </nav>
+
+        <section class="text-center">
+            <img class="mx-auto mt-5" src="assets/banner.png" alt="">
+            <h1 class="font-extrabold text-6xl text-color-headline mt-6">
+                A barn house of this design has a <br> striking appearance
+            </h1>
+            <p class="font-semibold text-lg text-color-p mt-6">The barn house captivates with its blend of rustic
+                charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows
+                that
+                flood the space with natural light.</p>
+
+            <button class="btn font-bold text-lg rounded-full bg-btn-view mt-8">View Details <i
+                    class="fa-solid fa-arrow-right -rotate-45 rounded-full w-8 h-8   bg-color-primary text-black text-lg"></i></button>
+        </section>
+
     </header>
 
 
