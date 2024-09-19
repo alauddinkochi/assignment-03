@@ -49,13 +49,14 @@
     <header class="container mx-auto">
         <nav class="border-solid">
             <div class="navbar">
-                <div>
+                <div class="navbar-start">
+
                     <a class="bg-white font-bold text-2xl"> <i
                             class="fa-solid fa-arrow-right -rotate-45 rounded-full w-8 h-8 px-2 py-1 bg-color-primary text-black text-lg"></i>
-                        Rinterio</a>   
+                        Rinterio</a>
                 </div>
 
-                <div class="hidden lg:flex">
+                <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
                         <li><a class="font-bold">Home</a></li>
                         <li><a>Services</a></li>
@@ -65,9 +66,7 @@
                     </ul>
                 </div>
 
-                
-
-                <div class="flex gap-8 ">
+                <div class="navbar-end flex justify-evenly">
                     <div class="flex">
                         <i
                             class="fa-solid fa-cart-shopping  rounded-full bg-red-600 w-8 h-8 px-2 py-2 mr-4 hidden md:block"></i>
@@ -76,18 +75,9 @@
                             class="fa-solid fa-magnifying-glass rounded-full bg-red-600 w-8 h-8 px-2 py-2 hidden md:block"></i>
                     </div>
 
-                    <div class="hidden md:block">
-                        <a class="btn font-bold text-lg rounded-full bg-color-primary"> Book Consult <i
-                                class="fa-solid fa-arrow-right -rotate-45 rounded-full w-7 h-7 px-1 py-1 bg-black text-white"></i></a>
-                    </div>
-
                     <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
+                        <div tabindex="0" role="button" class="btn rounded-full lg:hidden">
+                            <i class="fa-solid fa-bars font-bold"></i>
                         </div>
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 shadow">
@@ -98,12 +88,14 @@
                             <li><a>Contact Us</a></li>
                         </ul>
                     </div>
+
+                    <div class="hidden md:block">
+                        <a class="btn font-bold text-lg rounded-full bg-color-primary"> Book Consult <i
+                                class="fa-solid fa-arrow-right -rotate-45 rounded-full w-7 h-7 px-1 py-1 bg-black text-white"></i></a>
+                    </div>
                 </div>
-
-                
-
             </div>
-            
+
         </nav>
 
         <section class="text-center">
@@ -116,14 +108,22 @@
                 that
                 flood the space with natural light.</p>
 
-            <button class="btn font-bold text-lg rounded-full bg-btn-view mt-8">View Details <i
+            <button class="btn font-bold text-lg rounded-full bg-btn-view mt-8 w-full lg:w-auto">View Details <i
                     class="fa-solid fa-arrow-right -rotate-45 rounded-full w-8 h-8   bg-color-primary text-black text-lg"></i></button>
         </section>
 
     </header>
 
 
-    <main></main>
+    <main>
+        <div>
+            <div>
+                
+            </div>
+        </div>
+
+
+    </main>
 
 
     <footer></footer>
