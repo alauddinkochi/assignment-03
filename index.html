@@ -28,12 +28,17 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                        "color-primary": 'rgb(171, 239, 95)',
+                        "color-start" : 'rgb(255, 255, 255)',
+                        "color-end": 'rgba(255, 255, 255, 0)',
+                        "color-primary" : 'rgb(171, 239, 95)',
                         "btn-view": 'rgba(171, 239, 95, 0.5)',
                         "color-p": 'rgb(73, 73, 73)',
                         "color-headline": 'rgb(33, 33, 33)',
-                        "bg-main": '#F4F4F4',
-
+                        "main": 'rgb(244, 244, 244)',
+                        "concept": 'rgb(231, 193, 211)',
+                        "Design-Process": 'rgb(239, 218, 110)',
+                        "Supervision": 'rgb(164, 218, 195)',
+                        "Budget-Planning": 'rgb(119, 170, 234)',
                     }
                 }
             }
@@ -47,7 +52,10 @@
 </head>
 
 <body class="font-manrope">
-    <header class="container mx-auto p-3">
+    <header class="bg-gradient-to-r from-color-start to-color-end container mx-auto p-3">
+
+        <!-- navbar -->
+
         <nav class="border-solid">
             <div class="navbar">
                 <div class="navbar-start">
@@ -70,10 +78,10 @@
                 <div class="navbar-end flex justify-evenly">
                     <div class="flex">
                         <i
-                            class="fa-solid fa-cart-shopping  rounded-full bg-red-600 w-8 h-8 px-2 py-2 mr-4 hidden md:block"></i>
+                            class="fa-solid fa-cart-shopping  rounded-full bg-white w-8 h-8 px-2 py-2 mr-4 hidden md:block"></i>
 
                         <i
-                            class="fa-solid fa-magnifying-glass rounded-full bg-red-600 w-8 h-8 px-2 py-2 hidden md:block"></i>
+                            class="fa-solid fa-magnifying-glass rounded-full bg-white w-8 h-8 px-2 py-2 hidden md:block"></i>
                     </div>
 
                     <div class="dropdown">
@@ -117,10 +125,14 @@
 
 
     <main class="bg-main p-3 relative">
-        <div class="container mx-auto lg:flex justify-between mt-20 ">
 
-            <div class="hidden lg:block" >
-                <img class="border-dashed border-2 border-gray-300 py-5 absolute left-10 top-5" src="assets/Vector.png" alt="">
+        <!-- about us -->
+
+        <section class="container mx-auto lg:flex justify-between mt-20 ">
+
+            <div class="hidden lg:block">
+                <img class="border-dashed border-2 border-gray-300 py-5 absolute left-10 top-5" src="assets/Vector.png"
+                    alt="">
             </div>
 
             <div>
@@ -134,7 +146,7 @@
                         modern sophistication, featuring weathered wood, sleek metal accents.</p>
                 </div>
 
-                <div class="flex mt-5 p-5 bg-slate-400 rounded-xl ">
+                <div class="flex mt-5 lg:p-5 bg-white rounded-xl ">
                     <div>
                         <img class="m-5" src="assets/commercial.png" alt="">
                     </div>
@@ -145,7 +157,7 @@
                     </div>
                 </div>
 
-                <div class="flex mt-5 mb-5 p-5 bg-slate-400 rounded-xl">
+                <div class="flex mt-5 mb-5 lg:p-5 bg-white rounded-xl">
                     <div>
                         <img class="m-5" src="assets/residential.png" alt="">
                     </div>
@@ -158,11 +170,49 @@
 
             </div>
 
-            <div >
+            <div>
                 <img src="assets/Rectangle.png" alt="">
             </div>
-        </div>
+        </section>
 
+        <!-- How we works -->
+
+        <section class="container mx-auto">
+            <div class="text-center mt-8">
+                <button class="btn rounded-full bg-white text-black"><i class="fa-solid fa-arrow-right"></i> How we works</button>
+
+                <h1 class="text-4xl font-extrabold mt-4">Our Works Process</h1>
+                <p class="mt-5 color-p text-lg font-medium">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
+            </div>
+
+            <div class="lg:flex gap-5 mt-5">
+                <div class="bg-concept p-5 rounded-xl mt-3">
+                    <img src="assets/concept.png" alt="">
+                    <h3 class="font-extrabold text-black text-lg mt-2">Concept</h3>
+                    <p class="mt-2 color-p text-lg font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+
+                <div class="bg-Design-Process p-5 rounded-xl mt-3">
+                    <img src="assets/flow-chart.png" alt="">
+                    <h3 class="font-extrabold text-black text-lg mt-2">Design Process</h3>
+                    <p class="mt-2 color-p text-lg font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+
+                <div class="bg-Supervision p-5 rounded-xl mt-3">
+                    <img src="assets/vision.png" alt="">
+                    <h3 class="font-extrabold text-black text-lg mt-2">Supervision</h3>
+                    <p class="mt-2 color-p text-lg font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+
+                <div class="bg-Budget-Planning p-5 rounded-xl mt-3">
+                    <img src="assets/budget-planning.png" alt="">
+                    <h3 class="font-extrabold text-black text-lg mt-2">Budget Planning</h3>
+                    <p class="mt-2 color-p text-lg font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+            </div>
+        </section>
+
+        
 
     </main>
 
