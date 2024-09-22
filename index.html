@@ -20,7 +20,6 @@
         .font-manrope {
             font-family: "Manrope", sans-serif;
         }
-        
     </style>
     <!-- color family -->
     <script>
@@ -41,6 +40,8 @@
                         "Supervision": 'rgb(164, 218, 195)',
                         "Budget-Planning": 'rgb(119, 170, 234)',
                         "btn-connect": 'rgba(171, 239, 95, 0.2)',
+                        "footer-heading": 'rgb(233, 233, 233)',
+                        "footer-p": 'rgb(115, 115, 115)',
                     }
                 }
             }
@@ -114,9 +115,8 @@
             <h1 class="font-extrabold text-6xl text-color-headline mt-6">
                 A barn house of this design has a <br> striking appearance
             </h1>
-            <p class="font-semibold text-lg text-color-p mt-6">The barn house captivates with its blend of rustic
-                charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows
-                that
+            <p class="font-semibold text-lg text-color-p mt-6">The barn house captivates with its blend of rustic charm
+                and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that
                 flood the space with natural light.</p>
 
             <button class="btn font-bold text-lg rounded-full bg-btn-view mt-8 w-full lg:w-auto">View Details <i
@@ -288,36 +288,68 @@
         </section>
 
         <!-- Let’s Discuss Next Project -->
-       
-        <section class="p-5 lg:pt-0 bg-no-repeat bg-cover" style="background-image: url('./assets/bg.jpg');" >
-            <div class="pt-5 mt-10 text-center" >
-                <button class="btn rounded-full bg-btn-connect text-black"><i class="fa-solid fa-arrow-right"></i> Let’s Connect</button>
+
+        <section class="p-5 lg:pt-0 bg-no-repeat bg-cover" style="background-image: url('./assets/bg.jpg');">
+            <div class="pt-5 mt-10 text-center">
+                <button class="btn rounded-full bg-btn-connect text-black"><i class="fa-solid fa-arrow-right"></i> Let’s
+                    Connect</button>
                 <h1 class="text-4xl font-extrabold mt-4">Our Works Process</h1>
-                <p class="mt-5 color-p text-lg font-medium">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
+                <p class="mt-5 color-p text-lg font-medium">The barn house captivates with its blend of rustic charm and
+                    modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
             </div>
             <!-- class="grid grid-cols-2" -->
-            <form class="lg:grid grid-cols-2 mx-auto gap-y-3 pt-12 lg:px-40 lg:gap-5"  action="">
-                <input type="text" placeholder="First Name*" class="input input-bordered bg-white w-full max-w-lg rounded-2xl mt-10 lg:mt-0" />
-                <input type="text" placeholder="Last Name*" class="input input-bordered bg-white w-full max-w-lg rounded-2xl mt-5 lg:mt-0" />
-                <input type="text" placeholder="Email Number*" class="input input-bordered bg-white w-full max-w-lg rounded-2xl mt-5 lg:mt-0" />
-                <input type="text" placeholder="Email Number*" class="input input-bordered bg-white w-full max-w-lg rounded-2xl mt-5 lg:mt-0" />
-                <input type="text" placeholder="Write your message here" class="input input-bordered bg-white w-full  rounded-2xl col-span-2 h-40 pb-20 mt-5 lg:mt-0" />
-               
-                
+            <form class="lg:grid grid-cols-2 mx-auto gap-y-3 pt-12 lg:px-40 lg:gap-5" action="">
+                <input type="text" placeholder="First Name*"
+                    class="input input-bordered bg-white w-full max-w-lg rounded-2xl mt-10 lg:mt-0" />
+                <input type="text" placeholder="Last Name*"
+                    class="input input-bordered bg-white w-full max-w-lg rounded-2xl mt-5 lg:mt-0" />
+                <input type="text" placeholder="Phone Number*"
+                    class="input input-bordered bg-white w-full max-w-lg rounded-2xl mt-5 lg:mt-0" />
+                <input type="text" placeholder="Email Number*"
+                    class="input input-bordered bg-white w-full max-w-lg rounded-2xl mt-5 lg:mt-0" />
+                <input type="text" placeholder="Write your message here"
+                    class="input input-bordered bg-white w-full  rounded-2xl col-span-2 h-40 pb-20 mt-5 lg:mt-0" />
+
+
             </form>
-            
+
             <div class="text-center mt-10">
-                <a class="btn font-bold text-lg rounded-full bg-color-primary w-3/4 "> Send Mail <i
-                    class="fa-solid fa-arrow-right -rotate-45 rounded-full w-7 h-7 px-1 py-1 bg-black text-white"></i></a>
+                <a class="btn font-bold text-lg rounded-full bg-color-primary w-3/4 mb-10 "> Send Mail <i
+                        class="fa-solid fa-arrow-right -rotate-45 rounded-full w-7 h-7 px-1 py-1 bg-black text-white"></i></a>
             </div>
 
-            
+
         </section>
 
     </main>
 
 
-    <footer></footer>
+    <footer class="text-center bg-black py-20 px-14 lg:px-0">
+
+        <div>
+            <a class="bg-black text-footer-heading  font-bold text-2xl"> <i
+                    class="fa-solid fa-arrow-right -rotate-45 rounded-full w-8 h-8 px-2 py-1 bg-color-primary text-black text-lg"></i>
+                Rinterio</a>
+
+            <p class="font-semibold text-lg text-footer-p mt-4">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
+        </div>
+
+        <div>
+            <ul class="text-footer-heading lg:flex justify-center gap-32 my-14">
+                <li class="mt-5"><a>Home</a></li>
+                <li class="mt-5"><a>Services</a></li>
+                <li class="mt-5"><a>Portfolio</a></li>
+                <li class="mt-5"><a>Blogs</a></li>
+                <li class="mt-5"><a>Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <a class="btn font-bold text-lg rounded-full bg-color-primary w-full lg:w-auto"> Book Consult <i
+                class="fa-solid fa-arrow-right -rotate-45 rounded-full w-7 h-7 px-1 py-1 bg-black text-white"></i></a>
+        </div>
+
+    </footer>
 
 </body>
 
